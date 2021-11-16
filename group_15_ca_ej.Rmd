@@ -5,8 +5,8 @@ date: "11/11/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=FALSE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 # Attach packages
 library(tidyverse)
 library(janitor)
@@ -23,9 +23,9 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
          geom_hex() +
   labs(x = "Percentage White",
-       y = "CES 3.0 Score",
-       title = "White Population in CES 3.0")+
-  scale_fill_gradient(low = "lightblue", high = "red")+
+       y = "CES 3.0 Score") +
+  scale_fill_gradient(low = "lightblue", high = "red") +
   theme_minimal()
 ```
 
+**Figure 1: CES 3.0 scores and percentage white population**
