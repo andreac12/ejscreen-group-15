@@ -29,3 +29,7 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
 ```
 
 **Figure 1: CES 3.0 scores and percentage white population**
+
+Generally speaking CES 3.0 Score is decreasing with increasing white population percentage (inversely correlated). Trend is roughly linear, however further analysis is required for conclusive determination.
+
+Data Source: CalEnviroScreen 3.0. California Office of Environmental Health Hazard Assessment (2018). California Environmental Protection Agency (CalEPA). https://oehha.ca.gov/media/downloads/calenviroscreen/document-calenviroscreen/raceageces3analysis.pdf
