@@ -24,6 +24,8 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
          geom_hex() +
   labs(x = "Percentage White",
        y = "CES 3.0 Score",
-       title = "White Population in CES 3.0")
+       title = "White Population in CES 3.0")+
+  scale_fill_gradient(low = "lightblue", high = "red")+
+  theme_minimal()
 ```
 
